@@ -3,171 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Лучшие экскурсии в Смоленске</title>
-    <meta name="title" content="Лучшие экскурсии в Смоленске">
-    <meta name="description" content="Лучшие экскурсии в Смоленске на 2026 год">
-    <meta name="author" content="Дарья Колесникова">
-    <meta name="keywords" content="Лучшие экскурсии в Смоленске Лучшие экскурсии в Смоленске на 2026 год">
-    
-    <!-- Webmaster Verification -->
+
+    <title>{{ARTICLE_TITLE}}</title>
+    <meta name="title" content="{{ARTICLE_TITLE}}">
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR_NAME}}">
+    <meta name="keywords" content="{{ARTICLE_KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="k1naFcMKtZ0AU2hjBnyOV0ByIwQiO-JKxBl57AOcdxU">
-    <meta name="yandex-verification" content="e31d8a386f36404d">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <meta name="yandex-verification" content="{{YANDEX_VERIFICATION_CODE}}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{ARTICLE_URL}}">
+
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ekskursii-v-smolenske.vercel.app">
-    <meta property="og:title" content="Лучшие экскурсии в Смоленске">
-    <meta property="og:description" content="Лучшие экскурсии в Смоленске на 2026 год">
-    <meta property="og:image" content="https://ekskursii-v-smolenske.vercel.app/icon.png">
-    <meta property="og:site_name" content="Лучшие экскурсии в Смоленске">
+    <meta property="og:url" content="{{ARTICLE_URL}}">
+    <meta property="og:title" content="{{ARTICLE_TITLE}}">
+    <meta property="og:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:locale" content="ru_RU">
-    <meta property="article:published_time" content="2026-01-10T21:14:47+00:00">
-    <meta property="article:author" content="Дарья Колесникова">
+    <meta property="article:published_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:modified_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:author" content="{{AUTHOR_NAME}}">
     <meta property="article:section" content="Статьи">
-    
-    <!-- Twitter -->
+    <meta property="article:tag" content="{{ARTICLE_KEYWORDS}}">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ekskursii-v-smolenske.vercel.app">
-    <meta name="twitter:title" content="Лучшие экскурсии в Смоленске">
-    <meta name="twitter:description" content="Лучшие экскурсии в Смоленске на 2026 год">
-    <meta name="twitter:image" content="https://ekskursii-v-smolenske.vercel.app/icon.png">
-    <meta name="twitter:creator" content="Дарья Колесникова">
-    
-    <!-- Favicon -->
+    <meta name="twitter:url" content="{{ARTICLE_URL}}">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}}">
+    <meta name="twitter:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    <meta name="twitter:creator" content="{{AUTHOR_NAME}}">
+
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
+
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Лучшие экскурсии в Смоленске",
-        "description": "Лучшие экскурсии в Смоленске на 2026 год",
-        "image": "https://ekskursii-v-smolenske.vercel.app/icon.png",
-        "datePublished": "2026-01-10T21:14:47+00:00",
-        "dateModified": "2026-01-10T21:14:47+00:00",
-        "author": {
-            "@type": "Person",
-            "name": "Дарья Колесникова",
-            "description": "Эксперт в области культурного туризма и исторической археологии, обладающий более чем десятилетним опытом работы в сфере организации экскурсий по уникальным локациям. Автор множества публикаций о скрытых жемчужинах российских городов, в том числе Смоленска, и обладатель наград за вклад в развитие местного культурного наследия. Специализируется на создании авторских маршрутов, которые соединяют архитектурные тайны с увлекательными историями, открывая посетителям новые грани известных мест.",
-            "image": "https://ui-avatars.com/api/?name=Дарья+Колесникова&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Лучшие экскурсии в Смоленске",
-            "url": "https://ekskursii-v-smolenske.vercel.app",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://ekskursii-v-smolenske.vercel.app/icon.png"
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "image": ["{{OG_IMAGE_URL}}"],
+                "datePublished": "{{PUBLISH_DATE_ISO}}",
+                "dateModified": "{{PUBLISH_DATE_ISO}}",
+                "author": {
+                    "@type": "Person",
+                    "name": {{AUTHOR_NAME_JSON}},
+                    "description": {{AUTHOR_DESCRIPTION_JSON}},
+                    "image": "{{AUTHOR_AVATAR}}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{SITE_URL}}/icon.png"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ARTICLE_URL}}"
+                },
+                "articleSection": "Статьи",
+                "wordCount": {{WORD_COUNT}},
+                "timeRequired": "PT{{READING_TIME}}M",
+                "inLanguage": "ru-RU"
+            },
+            {
+                "@type": "Person",
+                "@id": "{{ARTICLE_URL}}#author",
+                "name": {{AUTHOR_NAME_JSON}},
+                "description": {{AUTHOR_DESCRIPTION_JSON}},
+                "image": "{{AUTHOR_AVATAR}}",
+                "jobTitle": "Эксперт"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": {{SITE_NAME_JSON}},
+                        "item": "{{SITE_URL}}"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Статьи",
+                        "item": "{{SITE_URL}}/articles/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": {{ARTICLE_TITLE_JSON}},
+                        "item": "{{ARTICLE_URL}}"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ARTICLE_URL}}#webpage",
+                "url": "{{ARTICLE_URL}}",
+                "name": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": {{ARTICLE_TITLE_JSON}}
+                },
+                "inLanguage": "ru-RU"
             }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://ekskursii-v-smolenske.vercel.app"
-        },
-        "articleSection": "Статьи",
-        "wordCount": 854,
-        "timeRequired": "PT4M"
+        ]
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="article-header">
-            <div class="header-content">
-                <h1 class="article-title" itemprop="headline">Лучшие экскурсии в Смоленске</h1>
-                <div class="article-meta">
-                    <time datetime="2026-01-10T21:14:47+00:00" itemprop="datePublished">10.01.2026</time>
-                    <meta itemprop="dateModified" content="2026-01-10T21:14:47+00:00">
-                    <span class="reading-time" itemprop="timeRequired" content="PT4M">Время чтения: 4 мин</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Author Section -->
-        <section class="author-section" itemscope itemtype="https://schema.org/Person" itemprop="author">
-            <div class="author-card">
-                <div class="author-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Дарья+Колесникова&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true" alt="Дарья Колесникова" itemprop="image" onerror="this.src='https://ui-avatars.com/api/?name=Дарья+Колесникова&size=120&background=4f46e5&color=fff&bold=true'">
-                </div>
-                <div class="author-info">
-                    <div class="author-name" itemprop="name">Дарья Колесникова</div>
-                    <p class="author-description" itemprop="description">Эксперт в области культурного туризма и исторической археологии, обладающий более чем десятилетним опытом работы в сфере организации экскурсий по уникальным локациям. Автор множества публикаций о скрытых жемчужинах российских городов, в том числе Смоленска, и обладатель наград за вклад в развитие местного культурного наследия. Специализируется на создании авторских маршрутов, которые соединяют архитектурные тайны с увлекательными историями, открывая посетителям новые грани известных мест.</p>
-                    <div class="author-badges">
-                        <span class="badge expert" itemprop="jobTitle">Эксперт</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Article Content -->
-        <article class="article-content" itemscope itemtype="https://schema.org/Article">
-            <meta itemprop="headline" content="Лучшие экскурсии в Смоленске">
-            <meta itemprop="description" content="Лучшие экскурсии в Смоленске на 2026 год">
-            <meta itemprop="datePublished" content="2026-01-10T21:14:47+00:00">
-            <meta itemprop="dateModified" content="2026-01-10T21:14:47+00:00">
-            <meta itemprop="timeRequired" content="PT4M">
-            <meta itemprop="wordCount" content="854">
-            <div class="content-wrapper" itemprop="articleBody">
-                <p><a href="https://experience.tripster.ru/experience/Smolensk/3930-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Smolensk-3930">Узнать больше</a></p><p>Экскурсии в необычных локациях Смоленска — это шанс увидеть город с неожиданной стороны. Здесь собраны маршруты, которые покажут скрытые уголки Смоленска, расскажут о его загадочных историях и предложат уникальный формат взаимодействия с историей и культурой. Экскурсии подойдут любителям архитектуры, мистики, истории и тем, кто хочет открыть для себя что-то новое.</p><p>Секретные места Смоленска: тайны города на Днепре<br> Экскурсия погрузит вас в малоизвестную историю Смоленска, раскрывая скрытые смыслы архитектуры и рассказывая легенды о местных зданиях. Вы пройдёте по маршрутам, где обычно не бывает туристов, но которые хранят важные страницы прошлого. Маршрут составлен так, чтобы показать город как единое историческое полотно.<br> Необычные факты из истории<br> Посещение закрытых или редко используемых локаций<br> Интерактивный подход к подаче информации<br> <b>Отзывы</b>: Участники отмечают необычность программы, интересные повороты маршрута и эмоциональную вовлечённость гида.<br> <b>Цена</b>: 2 500 руб. за группу<br> Мистический Смоленск: привидения, легенды и страшилки<br> Погрузитесь в мир тайн, мистических историй и городских легенд Смоленска. Экскурсия проводится вечером и включает посещение мест, связанных с паранормальными явлениями и старинными поверьями. Гид расскажет, какие здания считаются проклятыми», а где до сих пор якобы слышны голоса прошлого.<br> Насыщенная программа с элементами шоу<br> Атмосферные локации<br> Увлекательные рассказы о фольклоре и верованиях<br> <b>Отзывы</b>: Туристы отмечают атмосферность, профессионализм гида и эффект мурашек во время рассказов.<br> <b>Цена</b>: 3 000 руб. за группу<br> Смоленск глазами фотографа: необычные ракурсы<br> Фотоэкскурсия, которая поможет найти интересные ракурсы в городе и запечатлеть его в нестандартном ракурсе. Фотограф-гид проведёт вас по местам, где сочетаются старина, современность и неожиданные детали. Вы получите не только красивые снимки, но и полезные советы по композиции и свету.<br> Работа с профессионалом<br> Подборка неочевидных точек для съёмки<br> Обратная связь по фотографиям<br> <b>Отзывы</b>: Участники хвалят знания гида, индивидуальный подход и качество снимков.<br> <b>Цена</b>: 4 000 руб. за группу<br> Тайные дворики и улицы Смоленска<br> Прогулка по закрытым внутренним дворам, где сохранилась атмосфера прошлого века. Вы увидите архитектурные драгоценности, спрятанные от глаз прохожих, и узнаете, как жили смоляне сто лет назад. Маршрут пролегает через старинные особняки и малоизвестные улочки.<br> Редкие виды Смоленска<br> Архитектурные находки вне туристических троп<br> Личный рассказ гида о быте и жизни города<br> <b>Отзывы</b>: Гости отмечают неожиданную красоту и глубину погружения в историю.<br> <b>Цена</b>: 2 800 руб. за группу<br> Подземный Смоленск: заброшенные катакомбы и тоннели<br> Необычная экскурсия под землю, где можно узнать о подземных сооружениях города. Вы услышите легенды о тайных ходах, осмотрите сохранившиеся объекты времен войны и исследуете закрытые пространства, недоступные обычным туристам.<br> Погружение в подземелья<br> Исторические и военные аспекты<br> Захватывающая атмосфера приключений<br> <b>Отзывы</b>: Участники ценят эксклюзивность и острые ощущения, хотя некоторые отмечают необходимость хорошего самочувствия.<br> <b>Цена</b>: 3 500 руб. за группу<br> Ночные прогулки по Смоленску: другой взгляд на город<br> Вечерняя экскурсия по наиболее живописным и атмосферным местам города. Освещение, тишина и неоновые вывески создают совершенно иную картину Смоленска. Гид расскажет о том, как меняется облик города после заката и какие события происходили здесь ночью.<br> Новый взгляд на привычные места<br> Спокойная и романтичная атмосфера<br> Интересные исторические параллели<br> <b>Отзывы</b>: Путешественники в восторге от эмоций и необычного освещения достопримечательностей.<br> <b>Цена</b>: 2 700 руб. за группу<br> Смоленск будущего: новые лица старого города<br> Прогулка по самым современным и перспективным районам Смоленска. Вы узнаете, как меняется городская среда, какие проекты реализуются и какие идеи могут определить будущее Смоленска. Экскурсия сочетает в себе анализ архитектуры и прогноз развития.<br> Современный взгляд на городскую среду<br> Примеры успешной реконструкции<br> Возможность задавать вопросы о развитии города<br> <b>Отзывы</b>: Участники отмечают актуальность и интересную подачу информации.<br> <b>Цена</b>: 2 600 руб. за группу<br> Заброшенные места Смоленска: руины и воспоминания<br> Экскурсия для любителей урбанизма и археологии XX века. Вы посетите места, где когда-то кипела жизнь, а сейчас стоят полуразрушенные здания. Гид расскажет, почему они были заброшены и какие судьбы связаны с ними.<br> Увлекательные истории исчезнувших объектов<br> Возможность увидеть то, чего больше нет<br> Впечатляющие кадры и вдохновение<br> <b>Отзывы</b>: <b>Отзывы</b> разнообразны — одни в восторге от необычности, другие советуют брать удобную обувь.<br> <b>Цена</b>: 3 200 руб. за группу<br> Смоленск в кино: места съёмок фильмов и сериалов<br> Маршрут по локациям, где снимались фильмы и сериалы. Вы узнаете, какие картины частично или полностью снимались в Смоленске, и сможете увидеть реальные декорации, на которых работали актёры.<br> Кинематографическая сторона города<br> Рассказы о процессе съёмок<br> Интересные факты из кинобизнеса<br> <b>Отзывы</b>: Гости в восторге от неожиданных совпадений и узнаваемых мест.<br> <b>Цена</b>: 2 900 руб. за группу<br> Легенды Смоленска: от мифов до реальных событий<br> Интерактивная экскурсия, сочетающая мифологию и реальные исторические события. Вы услышите древние предания, связанные с городом, и узнаете, какие из них имеют историческую основу. Маршрут пролегает по местам, где, по легендам, происходили чудеса или трагедии.<br> Связь мифа и реальности<br> Увлекательное повествование<br> Яркая образная подача<br> <b>Отзывы</b>: <b>Отзывы</b> положительные — гости хвалят подачу материала и эмоциональную вовлечённость.<br> <b>Цена</b>: 2 400 руб. за группу</p><p>Вопросы для закрытия темы экскурсий в необычных локациях Смоленска:<br> Какие экскурсии в необычных локациях Смоленска пользуются наибольшей популярностью?<br> Какие мистические экскурсии доступны в Смоленске?<br> Какие необычные локации Смоленска можно посетить на авторской экскурсии?<br> Как выбрать экскурсию в необычных локациях Смоленска для большой компании?<br> Какие <b>отзывы</b> оставляют участники экскурсий в необычных локациях Смоленска?<br> Какие фотоэкскурсии доступны в Смоленске?<br> Какие экскурсии в Смоленске включают посещение подземных сооружений?<br> Какова стоимость экскурсий в необычных локациях Смоленска в 2025 году?<br> Какие экскурсии в Смоленске подойдут любителям кино и сериалов?<br> Какие необычные экскурсии в Смоленске подойдут для семей с детьми<br>Реклама. Flight Marketplace Admin FZE. ИНН 9909618947</p>
-            </div>
-        </article>
-
-        <!-- Table Section -->
-        <section class="table-section">
-            <h2 class="section-title">Таблица сравнения</h2>
-            <div class="table-container">
-                <table>
-    <thead>
-        <tr>
-            <th>Название экскурсии</th>
-            <th>Тематика</th>
-            <th>Цена (руб.)</th>
-            <th>Отзывы</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Секретные места Смоленска</td>
-            <td>История, архитектура</td>
-            <td>2500</td>
-            <td>Необычность программы, интересные повороты маршрута</td>
-        </tr>
-        <tr>
-            <td>Мистический Смоленск</td>
-            <td>Мистика, легенды</td>
-            <td>3000</td>
-            <td>Атмосферность, профессионализм гида</td>
-        </tr>
-        <tr>
-            <td>Смоленск глазами фотографа</td>
-            <td>Фотография, искусство</td>
-            <td>Информация не указана</td>
-            <td>Работа с профессионалом, полезные советы</td>
-        </tr>
-    </tbody>
-</table>
-            </div>
-        </section>
-
-        
-
-        <!-- Footer -->
-        <footer class="article-footer">
-            <div class="footer-content">
-                <p>&copy; 2026 Дарья Колесникова. Все права защищены.</p>
+    <div class="s-2e57-page-shell">
+        <div class="s-2e57-site-topbar" aria-label="Навигация по статье">
+            <div class="s-2e57-site-topbar__brand">
+                <span class="s-2e57-site-topbar__dot" aria-hidden="true"></span>
                 
             </div>
-        </footer>
+            
+        </div>
+
+        <main class="s-2e57-article-layout">
+            <article class="s-2e57-article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="headline" content="{{ARTICLE_TITLE}}">
+                <meta itemprop="description" content="{{ARTICLE_DESCRIPTION}}">
+                <meta itemprop="datePublished" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="dateModified" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="timeRequired" content="PT{{READING_TIME}}M">
+                <meta itemprop="wordCount" content="{{WORD_COUNT}}">
+                <meta itemprop="mainEntityOfPage" content="{{ARTICLE_URL}}">
+
+                <header class="s-2e57-hero">
+                    <div class="s-2e57-eyebrow-row">
+                        
+                        
+                    </div>
+
+                    <h1 itemprop="headline">{{ARTICLE_TITLE}}</h1>
+                    
+
+                    <div class="s-2e57-meta-grid" aria-label="Ключевая информация о статье">
+
+                        <div class="s-2e57-meta-card">
+                            <div class="s-2e57-meta-label">Дата публикации</div>
+                            <div class="s-2e57-meta-value"><time datetime="{{PUBLISH_DATE_ISO}}">{{PUBLISH_DATE_FORMATTED}}</time></div>
+                        </div>
+                        <div class="s-2e57-meta-card">
+                            <div class="s-2e57-meta-label">Время чтения</div>
+                            <div class="s-2e57-meta-value">{{READING_TIME}} мин</div>
+                        </div>
+                        <div class="s-2e57-meta-card">
+                            <div class="s-2e57-meta-label">Объём текста</div>
+                            <div class="s-2e57-meta-value">{{WORD_COUNT}} слов</div>
+                        </div>
+                    </div>
+
+                    <section class="s-2e57-author-box" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                        <div class="s-2e57-author-avatar">
+                            <img
+                                src="{{AUTHOR_AVATAR}}"
+                                alt="{{AUTHOR_NAME}}"
+                                itemprop="image"
+                                onerror="this.src='https://ui-avatars.com/api/?name={{AUTHOR_NAME_ENCODED}}&size=160&background=f1f5f9&color=111827&bold=true'"
+                            >
+                        </div>
+                        <div class="s-2e57-author-info">
+                            <div class="s-2e57-author-name-row">
+                                <div class="s-2e57-author-name" itemprop="name">{{AUTHOR_NAME}}</div>
+                                <div class="s-2e57-author-badge" itemprop="jobTitle">Эксперт</div>
+                            </div>
+                            <p class="s-2e57-author-description" itemprop="description">{{AUTHOR_DESCRIPTION}}</p>
+                        </div>
+                    </section>
+                </header>
+
+                <div class="s-2e57-article-body">
+                    <div class="s-2e57-article-content">
+
+                        <div class="s-2e57-notion-prose" itemprop="articleBody">
+                            {{ARTICLE_HTML_CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <section class="s-2e57-table-card s-2e57-table-section" aria-labelledby="comparison-title">
+                <div class="s-2e57-section-head">
+                    <h2 id="s-2e57-comparison-title">Таблица сравнения</h2>
+
+                </div>
+
+                <div class="s-2e57-table-wrap">
+                    {{TABLE_CONTENT}}
+                </div>
+            </section>
+
+            <footer class="s-2e57-footer-card s-2e57-article-footer">
+                <div class="s-2e57-footer-inner">
+                    <p>&copy; {{CURRENT_YEAR}}</p>
+                   
+                </div>
+            </footer>
+        </main>
     </div>
+
+
 </body>
 </html>
-
-
